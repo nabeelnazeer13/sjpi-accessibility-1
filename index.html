@@ -53,24 +53,23 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         </div>
     </header>
 
-    
-        
-     
+    <main id="main-content">
+        <section aria-labelledby="top-stories">
+        <h2 id="top-stories">Top stories</h2>
 
-        <div class="article">
-            <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
-            <marquee class="headline">Breaking News: ...!</marquee>
-            <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
-                unnamed species is believed to have unique traits that could contribute to future medical research and
-                biotechnology.</p>
-            <a href="404.html">Click here!</a>
-        </div>
+        <article class="article">
+            <h3>Deep-sea fish discovered near Australia</h3>
+            <p>
+            Scientists have discovered a new deep-sea fish with bioluminescent fins
+            off the coast of Australia. Researchers believe the species may help
+            future medical and biotechnology studies.
+            </p>
+            <a href="news/deep-sea-fish.html">Read more about the discovery</a>
+        </article>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
-        <div class="article" onclick="alert('This does nothing!')">
-            <div>Lunar New Year: Celebrate with us!</div>
-
-            <!-- Bilder visas inte, varför? -->
+        <article class="article" onclick="alert('This does nothing!')">
+            <h3>Lunar New Year: Celebrate with us!</h3>
             <div class="image-container">
                 <img src="/images/ocean.jpg" alt="ocean">
                 <img src="/images/city.jpg" alt="city">
