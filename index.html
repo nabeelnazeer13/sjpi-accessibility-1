@@ -38,32 +38,24 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 </head>
 
 <body>
-    <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
-    <nav aria-label="navigation">
-        <ul class="nav-main">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="#world">World</a></li>
-            <li><a href="#sports">Sports</a></li>
-            <li><a href="#entertainment">Entertainment</a></li>
-      </ul>
-    </nav>
-
-
-    <!-- Svåråtkomligt inputfällt -->
-    <div class="input-container">
-        <input type="text" placeholder="Enter text">
-        <button><a href="#">Search</a></button>
-    </div>
-
-    <!-- Dold text och klickbar div. 
-     .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
-    <p class="hidden-text">This text is invisible.</p>
-    <div class="button">Click here!</div>
-    <div class="container">
-
-        <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
+    <header class="site_header">
         <h1>A11y News</h1>
-        <h1></h1>
+        <nav aria-label="navigation">
+            <ul class="nav-main">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="#world">World</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+        </ul> </nav>
+        <div class="input-container">
+            <input type="text" placeholder="Enter text">
+            <a href="#">Search</a>
+        </div>
+    </header>
+
+    
+        
+     
 
         <div class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
