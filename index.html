@@ -48,7 +48,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
                 <li><a href="#entertainment">Entertainment</a></li>
         </ul> </nav>
         <div class="input-container">
-            <input type="text" placeholder="Enter text">
+            <input type="text" placeholder="Enter text" id="search_box">
             <a href="#">Search</a>
         </div>
     </header>
@@ -71,24 +71,22 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <article class="article" onclick="alert('This does nothing!')">
             <h3>Lunar New Year: Celebrate with us!</h3>
             <div class="image-container">
-                <img src="/images/ocean.jpg" alt="ocean">
-                <img src="/images/city.jpg" alt="city">
-                <img src="/images/family.jpg" alt="family">
+                <img src="images/ocean.jpg" alt="ocean">
+                <img src="images/city.jpg" alt="city">
+                <img src="images/family.jpg" alt="family">
             </div>
 
             <p>Access the news by pressing the images</p>
         </div>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
-        <div class="article" style="display: none;">
+        <!--<div class="article" style="display: none;">
             <p class="headline">Se en 50MB bild ladda långsamt!</p>
             <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="50000">
-        </div>
-
-        <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
+        </div> Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
         <div class="article">
             <video autoplay muted loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-            <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="tom hanks waving hands">
+            <img src="https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif" alt="tom hanks waving hands">
         </div>
     </div>
 
